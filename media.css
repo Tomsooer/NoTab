@@ -154,11 +154,12 @@
     }
 
     .common {
-        margin-top: 100px;
-        padding: 50px 0;
+        margin-top: 70px;
+        padding: 0;
+        background: none;
     }
 
-    .common__container {
+    .common__container, .common:nth-child(even) .container {
         flex-direction: column-reverse;
         gap: 70px;
     }
@@ -167,22 +168,48 @@
         align-self: center;
         width: 280px;
     }
+
     .scanner {
-        background: none;
+        margin-top: 0;
     }
 
     .scanner::before {
+        background: linear-gradient(180deg, #000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0.00) 54.71%, #000 83.92%), url("./images/bg-scanner.jpg") ;
+    }
+
+    .common::before {
+        background: linear-gradient(180deg, #000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0.00) 54.71%, #000 83.92%), url("./images/bg-scanner.jpg") ;
+    }
+
+    .code::before {
         content: "";
         display: block;
         height: 300px;
-        margin-bottom: -200px;
-        background: linear-gradient(180deg, #000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0.00) 54.71%, #000 83.92%), url("./images/bg-scanner.jpg") ;
+        margin-bottom: -100px;
+        background: linear-gradient(180deg, #000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0.00) 54.71%, #000 83.92%), url("./images/bg-code.jpg") ;
+        background-position: center;
         background-size: cover;
     }
 
+    .footer {
+        padding: 70px 0 30px;
+    }
+
+    .footer__cta {
+        margin-bottom: 70px;
+    }
+
+    .footer__row {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .footer__contact {
+        margin-bottom: 10px;
+    }
+
 }
-
-
 
 @media (max-width: 520px) {
     .welcome__img {
