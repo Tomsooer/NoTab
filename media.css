@@ -1,0 +1,204 @@
+@media (max-width: 940px) {
+
+    .welcome__cta {
+        padding-right: 0;
+    }
+
+    .welcome__img {
+        right: -190px;
+    }
+
+    .cta__text {
+        font-size: 24px;
+    }
+
+    .mission__img {
+        right: 60%;
+    }
+
+    .mission {
+        padding: 150px 0;
+    }
+
+    .common__col .mission__desk {
+        max-width: 370px;
+    }
+
+    .mission__desk {
+        width: unset;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .lgo {
+        gap: 3px;
+    }
+
+    .logo__img {
+        width: 70px;
+    }
+
+    .logo__text {
+        width: 70px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .header__container {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .header__login img {
+        display: none;
+    }
+
+    .welcome__row {
+        min-height: 420px;
+        margin-bottom: 40px;
+    }
+
+    .welcome__container {
+        width: 700px;
+        height: 826px;
+        right: -140px;
+        top: -190px;
+        background-image: url("./images/bg-welcome-mobile.svg");
+        transform: rotate(-90deg);
+
+
+        /*fill: rgba(250, 0, 255, 0.50);*/
+        /*filter: blur(125px);*/
+        /*transform: rotate(-90deg);*/
+    }
+
+    .welcome__img {
+        width: 350px;
+        right: -60px;
+        top: -60px;
+    }
+
+    .welcome__title {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    .welcome__text {
+        padding-left: 0;
+        font-size: 16px;
+        width: 60%;
+    }
+
+    .welcome__text::before. .welcome__text::after {
+        display: none;
+    }
+
+    .cta__img, .footer__cta .cta__img {
+        height: 60px;
+    }
+
+    .cta__links {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cta {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .mission {
+        padding: 50px 0 0;
+    }
+
+    .mission__img{
+        margin-top: -20px;
+        width: 320px;
+        position: static;
+        transform: none;
+        align-self: center;
+    }
+
+    .mission__title::after {
+        right: auto;
+        left: -24px;
+        top: -20px;
+    }
+
+    .mission__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mission__desk {
+        margin-left: unset;
+    }
+    .mission__title {
+        margin-bottom: 25px;
+    }
+
+
+    .mission__desk, .common__col {
+        max-width: unset;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .common {
+        margin-top: 100px;
+        padding: 50px 0;
+    }
+
+    .common__container {
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .common__img {
+        align-self: center;
+        width: 280px;
+    }
+    .scanner {
+        background: none;
+    }
+
+    .scanner::before {
+        content: "";
+        display: block;
+        height: 300px;
+        margin-bottom: -200px;
+        background: linear-gradient(180deg, #000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0.00) 54.71%, #000 83.92%), url("./images/bg-scanner.jpg") ;
+        background-size: cover;
+    }
+
+}
+
+
+
+@media (max-width: 520px) {
+    .welcome__img {
+      right: -170px;
+    }
+
+    .logo__img, .logo__text{
+        width: 50px;
+    }
+
+    .header__login {
+        font-size: 14px;
+    }
+
+}
+
+/*.logo__img {*/
+/*    width: 50px;*/
+/*}*/

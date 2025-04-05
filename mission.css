@@ -1,0 +1,48 @@
+.mission {
+    padding: 150px 0;
+    position: relative;
+}
+
+.container {
+    /*padding: 0 85px;*/
+}
+
+.mission__container {
+
+}
+
+.mission__img {
+    position: absolute;
+    top: 0;
+    right: 46%;
+    z-index: -1;
+    transform: rotate(90deg) translate(-50%);
+}
+
+.mission__desk {
+    width: 320px;
+    margin-left: auto;
+}
+
+.mission__title {
+    margin-bottom: 30px;
+    font-size: 51px;
+    position: relative;
+}
+
+.mission__title:after {
+    content: "";
+    position: absolute;
+    right: 55px;
+    top: 7px;
+    z-index: -1;
+    width: 85px;
+    height: 85px;
+    background: #F101BF;
+    opacity: 0.7;
+    filter: blur(50px);
+}
+
+.mission__text {
+
+}

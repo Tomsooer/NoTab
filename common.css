@@ -1,0 +1,40 @@
+.common {
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.common:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.common__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.common__img {
+
+}
+
+.common__col {
+    max-width: 410px;
+}
+
+.common__title {
+    margin-bottom: 20px;
+}
+
+.common__text {
+
+}
+
+.scanner {
+    background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0.00) 56%, #000 84%), url(./images/bg-scanner.jpg);
+    background-size: cover;
+}
+
+.code {
+    background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0.00) 56%, #000 84%), url(./images/bg-code.jpg);
+    background-size: cover;
+}
