@@ -8,17 +8,18 @@
 
 .welcome__container::after {
     content: "";
-    width: 650px;
+    width: 660px;
     height: 790px;
-    background-image: url("./images/bg-welcome.svg");
     position: absolute;
     right: -170px;
     top: -240px;
-    z-index: -1;
+    z-index: -10;
+
     transform: rotate(-105deg);
+
+    background-image: url("images/bg-welcome.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    padding-right: 80px;
 }
 
 .welcome__row {
@@ -28,52 +29,63 @@
     min-height: 700px;
 }
 
-.welcome__desc {
-
+.second__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    min-height: 270px;
 }
 
 .welcome__title {
-    margin-bottom: 130px;
     font-size: 64px;
     line-height: 1.09;
+    margin-bottom: 130px;
 }
 
 .welcome__text {
-    font-size: 20px;
-    padding-left: 100px;
-    width: 380px;
     position: relative;
+    padding-left: 130px;
+    max-width: 500px;
+
+    font-size: 20px;
 }
 
-.welcome__text:before {
+.welcome__text::before {
     content: "";
     width: 125px;
     height: 125px;
+
     position: absolute;
     left: 20px;
     top: -80px;
-    background: rgba(96, 92, 234, 0.50);
+    z-index: -10;
+
+    background: rgba(96, 92, 234, 0.5);
     filter: blur(50px);
+
     animation: lighter 2s infinite alternate;
 }
 
 @keyframes lighter {
- 0% {
-     background: rgba(96, 92, 234, 0.3);
- }
+    0% {
+        background: rgba(96, 92, 234, 0.3);
+    }
     100% {
         background: rgba(96, 92, 234, 0.7);
     }
 }
 
-.welcome__text:after {
+.welcome__text::after {
     content: "";
     position: absolute;
     left: 0;
     top: 25px;
-    width: 135px;
+    z-index: -5;
+
+    width: 130px;
     height: 4px;
-    background-color: #fff;
+    background-color: white;
+
     transform: rotate(120deg);
 }
 
@@ -81,7 +93,8 @@
     width: 600px;
     position: absolute;
     right: -30px;
-    top: -160px;
+    top: -140px;
+    z-index: -5;
 }
 
 .welcome__cta {
@@ -95,22 +108,12 @@
 }
 
 .cta__text {
-    font-family: 'Montserraft', sans-serif;
-    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    font-size: 35px;
 }
 
 .cta__links {
     display: flex;
     gap: 30px;
-}
-
-.cta__link {
-    flex-direction: column;
-    gap: 25px;
-}
-
-.cta {
-    gap: 40px;
-    flex-direction: column;
 }
