@@ -25,7 +25,7 @@
 
     .mission__desc {
         /*width: unset;*/
-        width: 270px;
+        width: 273px;
     }
 }
 
@@ -65,9 +65,9 @@
         height: 826px;
 
         right: -140px;
-        top: -190px;
+        top: -444px;
 
-        background-image: url("./images/bg--welcome-mobile.svg");
+        background-image: url("./images/bg-welcome-mobile.svg");
         transform: rotate(-90deg);
     }
 
@@ -135,6 +135,7 @@
     }
 
     .mission__title {
+        font-size: 24px;
         margin-bottom: 25px;
     }
 

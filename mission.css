@@ -14,12 +14,12 @@
 .mission__img {
     position: absolute;
     top: 0;
-    right: 46%;
+    right: 60%;
     z-index: -1;
     transform: rotate(90deg) translate(-50%);
 }
 
-.mission__desk {
+.mission__desc {
     width: 320px;
     margin-left: auto;
 }
